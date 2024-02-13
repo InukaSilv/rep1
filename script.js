@@ -1,12 +1,17 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-    const container = document.querySelector('.container');
-  
-    // Click event function
-    function flipHeart(event) {
-      container.classList.toggle('clicked');
-    }
-    
-    // Add click event listener to the container
-    container.addEventListener('click', flipHeart);
-  });
-  
+$(document).ready(function() {
+    $('#heart12').click(function() {
+        $('#heart1').css({
+            animationName: 'fadeOut',
+            animationDuration: '0.5s'
+        });
+
+        setTimeout(function() {
+            window.location.href = 'letter.html';
+        }, 1000);
+        // Load letter.html content
+        
+        
+    });
+});
+
+

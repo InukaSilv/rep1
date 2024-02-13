@@ -11,6 +11,9 @@ body {
   width: 100px;
   height: 90px;
   margin: 100px auto 0;
+  animation: heartbeat 1.2s infinite;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
 .heart1:before,
@@ -51,25 +54,34 @@ body {
   }
 }
 
-.heart1 {
-  animation: heartbeat 1.2s infinite;
+
+.heart12:hover {
+  animation: 0.7s;
 }
 
+.fadeOut {
+  opacity: 0;
+}
 
 @keyframes fadeOut {
   0% {
     opacity: 1;
+    animation-duration: 0.5s;
   }
   25% {
     opacity: 0.75;
+    animation-duration: 0.5s;
   }
   50% {
     opacity: 0.50;
+    animation-duration: 0.5s;
   }
   75% {
     opacity: 0.25;
+    animation-duration: 0.5s;
   }
   100% {
     opacity: 0;
+    animation-duration: 0.5s;
   }
 }
